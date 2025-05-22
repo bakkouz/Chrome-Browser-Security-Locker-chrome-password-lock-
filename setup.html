@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Master Password</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; background-color: #7a7979; }
+        .header { width: 100%; display: flex; flex-direction: column; align-items: center; margin-top: 32px; margin-bottom: 24px; }
+        .logo { margin-bottom: 10px; }
+        .title-text { font-weight: bold; color: #000000; font-size: 1em; }
+        .container { background-color: #e4dddd; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); text-align: center; }
+        h1 { margin-top: 0; color: #333; }
+        input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #45a049; }
+        #error-message { color: red; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="icons/icon48.png" alt="Locker Icon" class="logo" width="48" height="48">
+        <div class="title-text">Chrome Browser Security Locker</div>
+    </div>
+    <div class="container">
+        <h1>Set Your Master Password</h1>
+        <p>This password will be required every time you start Chrome.</p>
+        <input type="password" id="password" placeholder="Enter Master Password">
+        <input type="password" id="confirm-password" placeholder="Confirm Master Password">
+        <button id="set-password-btn">Set Password</button>
+        <div id="error-message"></div>
+    </div>
+    <script src="setup.js"></script>
+</body>
+</html>
